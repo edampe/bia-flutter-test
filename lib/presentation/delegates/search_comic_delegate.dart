@@ -1,6 +1,5 @@
 import 'dart:async';
 
-import 'package:bia_flutter_test/config/helpers/human_formats.dart';
 import 'package:bia_flutter_test/domain/entities/comic.dart';
 import 'package:flutter/material.dart';
 import 'package:animate_do/animate_do.dart';
@@ -161,14 +160,10 @@ class _ComicItem extends StatelessWidget {
                       : Text(comic.description),
                   Row(
                     children: [
-                      Icon(Icons.star_half_rounded,
-                          color: Colors.yellow.shade800),
-                      const SizedBox(width: 5),
-                      Text(
-                        HumanFormats.number(comic.prices![0].price, 1),
-                        style: textStyles.bodyMedium!
-                            .copyWith(color: Colors.yellow.shade900),
-                      ),
+                      Icon(Icons.attach_money, color: Colors.green.shade900),
+                      Text('${comic.prices![0].price}',
+                          style: textStyles.bodyLarge
+                              ?.copyWith(color: Colors.green.shade900)),
                     ],
                   )
                 ],
