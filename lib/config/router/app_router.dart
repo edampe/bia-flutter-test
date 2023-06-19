@@ -1,10 +1,21 @@
-import 'package:bia_flutter_test/presentation/screens/home_screen.dart';
 import 'package:go_router/go_router.dart';
+
+import 'package:bia_flutter_test/presentation/screens/screens.dart';
 
 final appRouter = GoRouter(initialLocation: '/', routes: [
   GoRoute(
-    path: '/',
-    name: HomeScreen.name,
-    builder: (context, state) => const HomeScreen(),
-  ),
+      path: '/',
+      name: HomeScreen.name,
+      builder: (context, state) => const HomeScreen(),
+      routes: [
+        GoRoute(
+          path: 'comic/:id',
+          name: ComicScreen.name,
+          builder: (context, state) {
+            final comicId = state.pathParameters['id'] ?? 'no-id';
+
+            return ComicScreen(comicId: comicId);
+          },
+        ),
+      ]),
 ]);
