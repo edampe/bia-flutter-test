@@ -1,8 +1,8 @@
-import 'package:bia_flutter_test/domain/entities/comic.dart';
-import 'package:bia_flutter_test/presentation/providers/comics/comic_info_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:animate_do/animate_do.dart';
+import 'package:bia_flutter_test/domain/entities/comic.dart';
+import 'package:bia_flutter_test/presentation/providers/comics/comic_info_provider.dart';
 
 class ComicScreen extends ConsumerStatefulWidget {
   static const name = 'comic-screen';

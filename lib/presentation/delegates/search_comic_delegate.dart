@@ -20,7 +20,6 @@ class SearchComicDelegate extends SearchDelegate<Comic?> {
     required this.initialComics,
   }) : super(
           searchFieldLabel: 'Buscar comics',
-          // textInputAction: TextInputAction.done
         );
 
   void clearStreams() {
@@ -60,9 +59,6 @@ class SearchComicDelegate extends SearchDelegate<Comic?> {
       },
     );
   }
-
-  // @override
-  // String get searchFieldLabel => 'Buscar comic';
 
   @override
   List<Widget>? buildActions(BuildContext context) {

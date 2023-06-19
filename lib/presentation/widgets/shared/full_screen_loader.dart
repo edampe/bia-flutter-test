@@ -6,11 +6,10 @@ class FullScreenLoader extends StatelessWidget {
   Stream<String> getLoadingMessages() {
     final messages = <String>[
       'Cargando comics',
-      'Comprando palomitas de maíz',
-      'Cargando populares',
-      'Llamando a mi novia',
-      'Ya mero...',
-      'Esto está tardando más de lo esperado :(',
+      '¿y si me cambio de operador de energía?',
+      'Cargando la ultima decada',
+      'Revisando mi factura Bia',
+      'Mucha demora :(',
     ];
 
     return Stream.periodic(const Duration(milliseconds: 1200), (step) {

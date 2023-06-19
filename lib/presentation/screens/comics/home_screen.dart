@@ -1,7 +1,8 @@
-import 'package:bia_flutter_test/presentation/providers/providers.dart';
 import 'package:flutter/material.dart';
-import 'package:bia_flutter_test/presentation/widgets/widgets.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+import 'package:bia_flutter_test/presentation/providers/providers.dart';
+import 'package:bia_flutter_test/presentation/widgets/widgets.dart';
 
 class HomeScreen extends StatelessWidget {
   static const name = 'home-screen';

@@ -1,6 +1,7 @@
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+
 import 'package:bia_flutter_test/domain/entities/comic.dart';
 import 'package:bia_flutter_test/presentation/providers/comics/comics_repository_provider.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 final nextWeekComicsProvider =
     StateNotifierProvider<ComicsNotifier, List<Comic>>((ref) {
