@@ -1,11 +1,11 @@
-import 'package:bia_flutter_test/domain/entities/comic.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
-import 'package:bia_flutter_test/presentation/delegates/search_comic_delegate.dart';
+import 'package:bia_flutter_test/config/fonts/bia_icons_icons.dart';
+import 'package:bia_flutter_test/domain/entities/comic.dart';
 import 'package:bia_flutter_test/presentation/providers/providers.dart';
-import '../../../config/fonts/bia_icons_icons.dart';
+import 'package:bia_flutter_test/presentation/delegates/search_comic_delegate.dart';
 
 class CustomAppbar extends ConsumerWidget {
   const CustomAppbar({super.key});

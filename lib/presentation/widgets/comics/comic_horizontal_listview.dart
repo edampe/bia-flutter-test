@@ -1,7 +1,8 @@
-import 'package:bia_flutter_test/domain/entities/comic.dart';
 import 'package:flutter/material.dart';
 import 'package:animate_do/animate_do.dart';
 import 'package:go_router/go_router.dart';
+
+import 'package:bia_flutter_test/domain/entities/comic.dart';
 
 class ComicHorizontalListview extends StatefulWidget {
   final List<Comic> comics;

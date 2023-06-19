@@ -5,7 +5,7 @@ import 'dart:convert';
 
 void main() {
   group('MD5', () {
-    test('encrypt should return correct MD5 hash', () {
+    test('cifrar debe devolver el hash MD5 correcto', () {
       const ts = '123';
       const privateKey = 'myPrivateKey';
       const publicKey = 'myPublicKey';
@@ -16,7 +16,7 @@ void main() {
       expect(MD5.encrypt(ts, privateKey, publicKey), equals(expectedHash));
     });
 
-    test('encrypt should return different hashes for different inputs', () {
+    test('cifrar debe devolver diferentes hashes para diferentes entradas', () {
       const ts1 = '123';
       const privateKey1 = 'myPrivateKey';
       const publicKey1 = 'myPublicKey';

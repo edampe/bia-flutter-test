@@ -1,5 +1,6 @@
-import 'package:bia_flutter_test/domain/entities/comic.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+import 'package:bia_flutter_test/domain/entities/comic.dart';
 
 import 'comics_providers.dart';
 
