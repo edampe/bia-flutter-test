@@ -5,5 +5,4 @@ class Environment {
       dotenv.env['THE_PUBLIC_KEY'] ?? 'No hay public key';
   static String theMarvelPrivateKey =
       dotenv.env['THE_PRIVATE_KEY'] ?? 'No hay api key';
-  static String theMarvelHash = dotenv.env['HASH'] ?? 'No hay hash';
 }

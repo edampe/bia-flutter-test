@@ -1,5 +1,6 @@
-import 'package:bia_flutter_test/presentation/providers/providers.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+import 'package:bia_flutter_test/presentation/providers/providers.dart';
 
 final initialLoadingProvider = Provider<bool>((ref) {
   final step1 = ref.watch(comicsSlideshowProvider).isEmpty;
