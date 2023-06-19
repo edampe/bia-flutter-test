@@ -7,6 +7,7 @@ environment:
   sdk: '>=3.0.3 <4.0.0'
 
 dependencies:
+  crypto: ^3.0.3
   dio: ^5.2.1+1
   flutter:
     sdk: flutter
@@ -25,7 +26,6 @@ flutter:
     - family: BiaIcons
       fonts:
         - asset: lib/config/fonts/BiaIcons.ttf
-        
+
   assets:
     - .env
-
